@@ -1,17 +1,18 @@
 Node WebSocket vs. Socket.IO
 ============================
 Comparng WebSocket and Socket.IO on Node.js with Express.js
-for an answer on Stack Overflow.
+
+Examples for an answer on Stack Overflow.
 
 Installation
 ------------
-Cloning the git repo:
+You can clone the git repo and install npm dependencies:
 ```sh
 git clone git@github.com:rsp/node-websocket-vs-socket.io.git
 cd node-websocket-vs-socket.io
 npm i
 ```
-Downloading a ZIP:
+Alternatively, instead of cloning the repo you can download a ZIP file:
 ```sh
 wget https://github.com/rsp/node-websocket-vs-socket.io/archive/master.zip
 unzip master.zip

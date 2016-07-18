@@ -4,6 +4,8 @@ Comparng WebSocket and Socket.IO on Node.js with Express.js
 
 Examples for an answer on Stack Overflow.
 
+... work in progress ...
+
 Installation
 ------------
 You can clone the git repo and install npm dependencies:

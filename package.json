@@ -1,0 +1,26 @@
+{
+  "name": "websocket-vs-socket.io",
+  "version": "0.0.0",
+  "description": "Comparng WebSocket and Socket.IO on Node.js with Express.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsp/node-websocket-vs-socket.io.git"
+  },
+  "keywords": [
+    "websocket"
+  ],
+  "author": {
+    "name": "Rafał Pocztarski",
+    "email": "r.pocztarski@gmail.com",
+    "url": "https://rsp.github.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsp/node-websocket-vs-socket.io/issues"
+  },
+  "homepage": "https://github.com/rsp/node-websocket-vs-socket.io#readme"
+}

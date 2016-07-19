@@ -11,7 +11,7 @@
     "url": "git+https://github.com/rsp/node-websocket-vs-socket.io.git"
   },
   "keywords": [
-    "websocket"
+    "websocket", "socket", "socket.io", "ws", "express", "express.js"
   ],
   "author": {
     "name": "Rafał Pocztarski",

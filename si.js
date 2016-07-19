@@ -1,5 +1,8 @@
 // Socket.IO example - backend - from:
 // https://github.com/rsp/node-websocket-vs-socket.io
+// Copyright (c) 2015, 2016 Rafał Pocztarski
+// Released under MIT License (Expat) - see:
+// https://github.com/rsp/node-websocket-vs-socket.io/blob/master/LICENSE.md
 
 var app = require('express')();
 var http = require('http').Server(app);
@@ -15,3 +18,4 @@ io.on('connection', s => {
 });
 http.listen(3002, () => console.error('listening on http://localhost:3002/'));
 console.error('socket.io example');
+

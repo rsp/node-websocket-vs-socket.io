@@ -1,3 +1,6 @@
+// WebSocket example - backend - from:
+// https://github.com/rsp/node-websocket-vs-socket.io
+
 var app = require('express')();
 var ws = require('express-ws')(app);
 //var http = require('http').Server(app);

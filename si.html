@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>socket.io example</title>
+<style>
+</style>
+<head>
+<body>
+<h1>socket.io example</h1>
+<ol id=l></ol>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+var s = io();
+var l = document.getElementById('l');
+s.on('message', function (m) {
+var i = document.createElement('li');
+i.innerText = m;
+l.appendChild(i);
+});
+</script>
+</body>
+</html>
+

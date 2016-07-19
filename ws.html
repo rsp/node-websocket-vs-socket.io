@@ -11,14 +11,15 @@
 <h1>websocket example</h1>
 <ol id=l></ol>
 <script>
-var l = window.location;
-var s = new WebSocket('ws://'+l.host+'/');
+
+var s = new WebSocket('ws://'+window.location.host+'/');
 var l = document.getElementById('l');
 s.addEventListener('message', function (m) {
-var i = document.createElement('li');
-i.innerText = m.data;
-l.appendChild(i);
+    var i = document.createElement('li');
+    i.innerText = m.data;
+    l.appendChild(i);
 });
+
 </script>
 </body>
 </html>

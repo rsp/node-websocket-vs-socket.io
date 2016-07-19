@@ -1,9 +1,11 @@
 // WebSocket example - backend - from:
 // https://github.com/rsp/node-websocket-vs-socket.io
+// Copyright (c) 2015, 2016 Rafał Pocztarski
+// Released under MIT License (Expat) - see:
+// https://github.com/rsp/node-websocket-vs-socket.io/blob/master/LICENSE.md
 
 var app = require('express')();
 var ws = require('express-ws')(app);
-//var http = require('http').Server(app);
 app.get('/', (req, res) => {
   console.error('express connection');
   res.sendFile(__dirname + '/ws.html');
@@ -15,3 +17,4 @@ app.ws('/', (s, req) => {
 });
 app.listen(3001, () => console.error('listening on http://localhost:3001/'));
 console.error('websocket example');
+

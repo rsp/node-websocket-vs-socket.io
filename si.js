@@ -1,3 +1,6 @@
+// Socket.IO example - backend - from:
+// https://github.com/rsp/node-websocket-vs-socket.io
+
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);

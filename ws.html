@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>websocket example</title>
+<style>
+</style>
+<head>
+<body>
+<h1>websocket example</h1>
+<ol id=l></ol>
+<script>
+var l = window.location;
+var s = new WebSocket('ws://'+l.host+'/');
+var l = document.getElementById('l');
+s.addEventListener('message', function (m) {
+var i = document.createElement('li');
+i.innerText = m.data;
+l.appendChild(i);
+});
+</script>
+</body>
+</html>
+

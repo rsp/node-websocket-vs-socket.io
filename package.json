@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "websocket-vs-socket.io": "ws-vs-si.js"
+  }
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rsp/node-websocket-vs-socket.io.git"

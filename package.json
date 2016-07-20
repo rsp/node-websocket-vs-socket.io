@@ -1,6 +1,6 @@
 {
   "name": "websocket-vs-socket.io",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Comparng WebSocket and Socket.IO on Node.js with Express.js",
   "preferGlobal": true,
   "scripts": {

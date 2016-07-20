@@ -5,17 +5,18 @@
 // https://github.com/rsp/node-websocket-vs-socket.io/blob/master/LICENSE.md
 
 var express = require('express');
-
+var log = function (m) {
+  console.error(new Date().toISOString()+' '+this.pre+m);
+}
 // WebSocket:
-var ws = {app: express(), pre: "websocket app: "};
-ws.log = m => console.error(ws.pre+m);
+var ws = {app: express(), pre: "websocket app: ", log: log};
 ws.ws = require('express-ws')(ws.app);
 ws.app.get('/', (req, res) => {
   ws.log('express connection - sending html');
   res.sendFile(__dirname + '/ws.html');
 });
 ws.app.ws('/', (s, req) => {
-  ws.log('websocket connection');
+  ws.log('incoming websocket connection');
   for (var t = 0; t < 3; t++)
     setTimeout(() => {
       ws.log('sending message to client');
@@ -27,8 +28,7 @@ ws.app.listen(3001, () =>
 ws.log('starting server');
 
 // Socket.IO:
-var si = {app: express(), pre: "socket.io app: "};
-si.log = m => console.error(si.pre+m);
+var si = {app: express(), pre: "socket.io app: ", log: log};
 si.http = require('http').Server(si.app);
 si.io = require('socket.io')(si.http);
 si.app.get('/', (req, res) => {
@@ -36,7 +36,7 @@ si.app.get('/', (req, res) => {
   res.sendFile(__dirname + '/si.html');
 });
 si.io.on('connection', s => {
-  si.log('socket.io connection');
+  si.log('incoming socket.io connection');
   for (var t = 0; t < 3; t++)
     setTimeout(() => {
       si.log('sending message to client');

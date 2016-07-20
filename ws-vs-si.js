@@ -7,32 +7,32 @@
 var express = require('express');
 
 // WebSocket:
-var wsapp = express();
-var ws = require('express-ws')(wsapp);
-wsapp.get('/', (req, res) => {
+var ws = {app: express(), name: "WebSocket App"};
+ws.ws = require('express-ws')(ws.app);
+ws.app.get('/', (req, res) => {
   console.error('express connection');
   res.sendFile(__dirname + '/ws.html');
 });
-wsapp.ws('/', (s, req) => {
+ws.app.ws('/', (s, req) => {
   console.error('websocket connection');
   for (var t = 0; t < 3; t++)
-    setTimeout(() => s.send('message from server'), 1000*t);
+    setTimeout(() => s.send('message from '+ws.name+' server'), 1000*t);
 });
-wsapp.listen(3001, () => console.error('listening on http://localhost:3001/'));
+ws.app.listen(3001, () => console.error('listening on http://localhost:3001/'));
 console.error('websocket example');
 
 // Socket.IO:
-var siapp = express();
-var http = require('http').Server(siapp);
-var io = require('socket.io')(http);
-siapp.get('/', (req, res) => {
+var si = {app: express(), name: "Sockey.IO App"};
+si.http = require('http').Server(si.app);
+si.io = require('socket.io')(si.http);
+si.app.get('/', (req, res) => {
   console.error('express connection');
   res.sendFile(__dirname + '/si.html');
 });
-io.on('connection', s => {
+si.io.on('connection', s => {
   console.error('socket.io connection');
   for (var t = 0; t < 3; t++)
-    setTimeout(() => s.emit('message', 'message from server'), 1000*t);
+    setTimeout(() => s.emit('message', 'message from '+si.name+' server'), 1000*t);
 });
-http.listen(3002, () => console.error('listening on http://localhost:3002/'));
+si.http.listen(3002, () => console.error('listening on http://localhost:3002/'));
 console.error('socket.io example');

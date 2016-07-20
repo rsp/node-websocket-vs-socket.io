@@ -20,13 +20,17 @@ https://github.com/rsp/node-websocket-vs-socket.io/blob/master/LICENSE.md
 <script src="/socket.io/socket.io.js"></script>
 <script>
 
-var s = io();
 var l = document.getElementById('l');
-s.on('message', function (m) {
+var log = function (m) {
     var i = document.createElement('li');
-    i.innerText = m;
+    i.innerText = new Date().toISOString()+' '+m;
     l.appendChild(i);
-});
+}
+log('opening socket.io connection');
+var s = io();
+s.on('connect_error', function (m) { log("error"); });
+s.on('connect', function (m) { log("socket.io connection open"); });
+s.on('message', function (m) { log(m); });
 
 </script>
 </body>

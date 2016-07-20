@@ -1,6 +1,6 @@
 Node WebSocket vs. Socket.IO
 ============================
-Comparng WebSocket and Socket.IO on Node.js with Express.js
+Comparing WebSocket and Socket.IO on Node.js with Express.js
 
 Examples for an answer on Stack Overflow.
 

@@ -24,7 +24,7 @@ var ws = {app: express(), pre: "websocket app: ", log: log};
 ws.ws = require('express-ws')(ws.app);
 ws.app.get('/', (req, res) => {
   ws.log('express connection - sending html');
-  res.sendFile(__dirname + '/ws.html');
+  res.sendFile(path.join(__dirname, 'ws.html'));
 });
 ws.app.ws('/', (s, req) => {
   ws.log('incoming websocket connection');
@@ -44,7 +44,7 @@ si.http = require('http').Server(si.app);
 si.io = require('socket.io')(si.http);
 si.app.get('/', (req, res) => {
   si.log('express connection - sending html');
-  res.sendFile(__dirname + '/si.html');
+  res.sendFile(path.join(__dirname, 'si.html'));
 });
 si.io.on('connection', s => {
   si.log('incoming socket.io connection');

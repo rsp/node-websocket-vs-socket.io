@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Socket.IO example - backend - from:
 // https://github.com/rsp/node-websocket-vs-socket.io
 // Copyright (c) 2015, 2016 Rafał Pocztarski

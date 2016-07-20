@@ -90,6 +90,15 @@ You start the server with either
 `ws-vs-si.js` (if you installed from the GitHub repo).
 See [Installation](#installation) above for details.
 
+When the server is running, you can open in your browser:
+
+* [http://localhost:3001/](http://localhost:3001/) - WebSocket version
+* [http://localhost:3001/](http://localhost:3002/) - Socket.IO version
+
+In Firefox or Chrome, you can open developer tools with Shift+Ctrl+I,
+open the Network tab and reload the page with Ctrl+R to see the network traffic
+for both versions.
+
 Issues
 ------
 For any bug reports or feature requests please

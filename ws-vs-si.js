@@ -8,6 +8,14 @@ var express = require('express');
 var log = function (m) {
   console.error(new Date().toISOString()+' '+this.pre+m);
 }
+
+console.error("node-websocket-vs-socket.io\n"
++"WebSocket vs. Socket.IO on Node.js with Express.js - see:\n"
++"https://github.com/rsp/node-websocket-vs-socket.io#readme\n"
++"Copyright (c) 2015, 2016 Rafał Pocztarski\n"
++"Released under MIT License (Expat) - see:\n"
++"https://github.com/rsp/node-websocket-vs-socket.io/blob/master/LICENSE.md\n");
+
 // WebSocket:
 var ws = {app: express(), pre: "websocket app: ", log: log};
 ws.ws = require('express-ws')(ws.app);

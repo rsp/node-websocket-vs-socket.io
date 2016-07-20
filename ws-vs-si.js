@@ -6,6 +6,7 @@
 // Released under MIT License (Expat) - see:
 // https://github.com/rsp/node-websocket-vs-socket.io/blob/master/LICENSE.md
 
+/*eslint-disable no-loop-func*/
 var express = require('express');
 var log = function (m) {
   console.error(new Date().toISOString()+' '+this.pre+m);

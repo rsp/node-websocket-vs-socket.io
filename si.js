@@ -6,6 +6,7 @@
 // Released under MIT License (Expat) - see:
 // https://github.com/rsp/node-websocket-vs-socket.io/blob/master/LICENSE.md
 
+/*eslint-disable no-loop-func*/
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);

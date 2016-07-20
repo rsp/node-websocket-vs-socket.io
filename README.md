@@ -1,5 +1,10 @@
 Node WebSocket vs. Socket.IO
 ============================
+[![npm install -g websocket-vs-socket.io](https://nodei.co/npm/websocket-vs-socket.io.png?compact=true)](https://www.npmjs.com/package/websocket-vs-socket.io)
+<br>
+[![Code Climate](https://codeclimate.com/github/rsp/node-websocket-vs-socket.io/badges/gpa.svg)](https://codeclimate.com/github/rsp/node-websocket-vs-socket.io)
+[![Downloads](https://img.shields.io/npm/dt/websocket-vs-socket.io.svg)](http://npm-stat.com/charts.html?package=websocket-vs-socket.io)
+
 Comparing WebSocket and Socket.IO on Node.js with Express.js
 
 Examples for an answer on Stack Overflow.

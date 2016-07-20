@@ -4,7 +4,6 @@ Comparng WebSocket and Socket.IO on Node.js with Express.js
 
 Examples for an answer on Stack Overflow.
 
-
 Quick start
 -----------
 Install:
@@ -87,7 +86,7 @@ Running
 -------
 You start the server with either
 `websocket-vs-socket.io` (if you installed from npm) or
-`ws-vs-si.js` (if you installed from the GitHub repo).
+`./ws-vs-si.js` (if you installed from the GitHub repo).
 See [Installation](#installation) above for details.
 
 When the server is running, you can open in your browser:

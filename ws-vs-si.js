@@ -28,7 +28,7 @@ ws.app.ws('/', (s, req) => {
   for (var t = 0; t < 3; t++)
     setTimeout(() => {
       ws.log('sending message to client');
-      s.send(ws.pre+'message from server');
+      s.send(ws.pre+'message from server', ()=>{});
     }, 1000*t);
 });
 ws.app.listen(3001, () =>

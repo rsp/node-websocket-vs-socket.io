@@ -22,12 +22,12 @@ websocket-vs-socket.io
 Open [http://localhost:3001/](http://localhost:3001/)
 in your browser, open developer tools with Shift+Ctrl+I, open the Network tab
 and reload the page with Ctrl+R to see the network traffic for the
-WebSocket version.
+**WebSocket version**.
 
 Open [http://localhost:3002/](http://localhost:3002/)
 in your browser, open developer tools with Shift+Ctrl+I, open the Network tab
 and reload the page with Ctrl+R to see the network traffic for the
-Socket.IO version.
+**Socket.IO version**.
 
 Uninstall the server:
 ```sh

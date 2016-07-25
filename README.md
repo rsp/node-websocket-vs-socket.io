@@ -5,11 +5,14 @@ Node WebSocket vs. Socket.IO
 [![Code Climate](https://codeclimate.com/github/rsp/node-websocket-vs-socket.io/badges/gpa.svg)](https://codeclimate.com/github/rsp/node-websocket-vs-socket.io)
 [![Downloads](https://img.shields.io/npm/dt/websocket-vs-socket.io.svg)](http://npm-stat.com/charts.html?package=websocket-vs-socket.io)
 
-Comparing WebSocket and Socket.IO on Node.js with Express.js
-- example server-side and client-side code to see the basic usage of
+Comparing WebSocket and Socket.IO on Node.js with Express.js -
+example server-side and client-side code to see the basic usage of
 both WebSocket and Socket.IO in an Express.js app,
 with info on how to compare the actual network traffic
 (which is commonly misunderstood by many online sources).
+
+See this Stack Overflow answer:
+* [Differences between socket.io and websockets](https://stackoverflow.com/questions/10112178/differences-between-socket-io-and-websockets/38558531#38558531)
 
 Quick start
 -----------

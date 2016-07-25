@@ -1,5 +1,9 @@
-engines:
+engines: 
   eslint:
     enabled: true
-  csslint:
-    enabled: true
+    
+ratings:
+   paths:
+   - ws-vs-si.js
+   - ws.js
+   - si.js

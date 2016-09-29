@@ -11,8 +11,10 @@ both WebSocket and Socket.IO in an Express.js app,
 with info on how to compare the actual network traffic
 (which is commonly misunderstood by many online sources).
 
-See this Stack Overflow answer:
+See those Stack Overflow answers where this code was used:
 * [Differences between socket.io and websockets](https://stackoverflow.com/questions/10112178/differences-between-socket-io-and-websockets/38558531#38558531)
+* [socket.io no communication between server and client](https://stackoverflow.com/questions/39619449/socket-io-no-communication-between-server-and-client/39619862#39619862)
+* [why web socket behave differently on nodejs ?](https://stackoverflow.com/questions/39765427/why-web-socket-behave-differently-on-nodejs/39765994#39765994)
 
 Quick start
 -----------

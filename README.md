@@ -15,6 +15,7 @@ See those Stack Overflow answers where this code was used:
 * [Differences between socket.io and websockets](https://stackoverflow.com/questions/10112178/differences-between-socket-io-and-websockets/38558531#38558531)
 * [socket.io no communication between server and client](https://stackoverflow.com/questions/39619449/socket-io-no-communication-between-server-and-client/39619862#39619862)
 * [why web socket behave differently on nodejs ?](https://stackoverflow.com/questions/39765427/why-web-socket-behave-differently-on-nodejs/39765994#39765994)
+* [getting an error when trying to use socket.io](https://stackoverflow.com/questions/39786269/getting-an-error-when-trying-to-use-socket-io/39786373#39786373)
 
 Quick start
 -----------

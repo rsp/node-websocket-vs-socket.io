@@ -98,6 +98,14 @@ npm i
 ./ws-vs-si.js
 ```
 
+### Installing from Docker
+You can build and run own docker image running from "root" repo folder
+```
+docker-compose -f ./docker/docker-compose.yml build
+docker-compose -f ./docker/docker-compose.yml up -d
+```
+
+
 Running
 -------
 You start the server with either

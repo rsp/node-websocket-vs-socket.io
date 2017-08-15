@@ -1,8 +1,11 @@
+#
+# docker-compose -f ./docker-armhf/docker-compose.yml build
+# docker-compose -f ./docker-armhf/docker-compose.yml up -d
+#
 version: '2'
-
 services:
   node-websocket-vs-socket.io:
-    image: "derand/node-websocket-vs-socket.io-armhf"
+    image: "derand/node-websocket-vs-socket.io:armhf"
     build: 
       context: ../
       dockerfile: ./docker-armhf/Dockerfile
@@ -16,4 +19,3 @@ services:
       options:
         max-size: "500k"
         max-file: "1"
-

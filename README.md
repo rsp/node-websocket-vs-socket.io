@@ -109,6 +109,7 @@ When the server is running, you can open in your browser:
 
 * [http://localhost:3001/](http://localhost:3001/) - WebSocket version
 * [http://localhost:3002/](http://localhost:3002/) - Socket.IO version
+* [http://localhost:3002/forced](http://localhost:3002/forced) - Socket.IO version (forced websockets)
 
 In Firefox or Chrome, you can open developer tools with Shift+Ctrl+I,
 open the Network tab and reload the page with Ctrl+R to see the network traffic

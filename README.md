@@ -136,6 +136,9 @@ Contributors
 * [Miloš Popović](https://github.com/miloss)
   (improved documentation in
   [PR #1](https://github.com/rsp/node-websocket-vs-socket.io/pull/1))
+* [Andrei Derevyagin](https://github.com/derand)
+  (added Docker support in
+  [PR #3](https://github.com/rsp/node-websocket-vs-socket.io/pull/3))
 
 License
 -------

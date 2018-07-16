@@ -105,7 +105,6 @@ docker-compose -f ./docker/docker-compose.yml build
 docker-compose -f ./docker/docker-compose.yml up -d
 ```
 
-
 Running
 -------
 You start the server with either
@@ -131,6 +130,12 @@ For any bug reports or feature requests please
 Author
 ------
 Rafał Pocztarski - [https://github.com/rsp](https://github.com/rsp)
+
+Contributors
+-
+* [Miloš Popović](https://github.com/miloss)
+  (improved documentation in
+  [PR #1](https://github.com/rsp/node-websocket-vs-socket.io/pull/1))
 
 License
 -------

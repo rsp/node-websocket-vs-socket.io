@@ -1,0 +1,21 @@
+#
+# docker-compose -f ./docker-armhf/docker-compose.yml build
+# docker-compose -f ./docker-armhf/docker-compose.yml up -d
+#
+version: '2'
+services:
+  node-websocket-vs-socket.io:
+    image: "derand/node-websocket-vs-socket.io:armhf"
+    build: 
+      context: ../
+      dockerfile: ./docker-armhf/Dockerfile
+    container_name: node-websocket-vs-socket.io
+    hostname: node-websocket-vs-socket.io
+    ports:
+      - "3001:3001"
+      - "3002:3002"
+    logging: &default_logging
+      driver: json-file
+      options:
+        max-size: "500k"
+        max-file: "1"

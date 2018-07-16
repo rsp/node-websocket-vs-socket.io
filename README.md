@@ -139,6 +139,10 @@ Contributors
 * [Andrei Derevyagin](https://github.com/derand)
   (added Docker support in
   [PR #3](https://github.com/rsp/node-websocket-vs-socket.io/pull/3))
+* [Orkun Tümer](https://github.com/tumerorkun)
+  (added Socket.io forced WebSocket feature in
+  [PR #4](https://github.com/rsp/node-websocket-vs-socket.io/pull/4),
+  closing [Issue #2](https://github.com/rsp/node-websocket-vs-socket.io/issues/2))
 
 License
 -------

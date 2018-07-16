@@ -144,6 +144,14 @@ Contributors
   [PR #4](https://github.com/rsp/node-websocket-vs-socket.io/pull/4),
   closing [Issue #2](https://github.com/rsp/node-websocket-vs-socket.io/issues/2))
 
+Thanks
+-
+Special thanks to:
+
+* [Tony G](https://github.com/pursual)
+
+for comments and suggestions.
+
 License
 -------
 MIT License (Expat). See [LICENSE.md](LICENSE.md) for details.

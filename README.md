@@ -4,7 +4,7 @@ Node WebSocket vs. Socket.IO
 <br>
 [![Code Climate](https://codeclimate.com/github/rsp/node-websocket-vs-socket.io/badges/gpa.svg)](https://codeclimate.com/github/rsp/node-websocket-vs-socket.io)
 [![Known Vulnerabilities](https://snyk.io/test/github/rsp/node-websocket-vs-socket.io/badge.svg)](https://snyk.io/test/github/rsp/node-websocket-vs-socket.io)
-[![Downloads](https://img.shields.io/npm/dt/websocket-vs-socket.io.svg)](http://npm-stat.com/charts.html?package=websocket-vs-socket.io)
+[![Downloads](https://img.shields.io/npm/dt/websocket-vs-socket.io.svg)](http://npm-stat.com/charts.html?package=websocket-vs-socket.io) [![Greenkeeper badge](https://badges.greenkeeper.io/rsp/node-websocket-vs-socket.io.svg)](https://greenkeeper.io/)
 
 Comparing WebSocket and Socket.IO on Node.js with Express.js -
 example server-side and client-side code to see the basic usage of

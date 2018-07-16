@@ -47,6 +47,10 @@ si.app.get('/', (req, res) => {
   si.log('express connection - sending html');
   res.sendFile(path.join(__dirname, 'si.html'));
 });
+si.app.get('/forced', (req, res) => {
+  si.log('express connection - sending html');
+  res.sendFile(path.join(__dirname, 'si-forced.html'));
+});
 si.io.on('connection', s => {
   si.log('incoming socket.io connection');
   for (var t = 0; t < 3; t++)

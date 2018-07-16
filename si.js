@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
   console.error('express connection');
   res.sendFile(path.join(__dirname, 'si.html'));
 });
+app.get('/forced', (req, res) => {
+  console.error('express connection');
+  res.sendFile(path.join(__dirname, 'si-forced.html'));
+});
 io.on('connection', s => {
   console.error('socket.io connection');
   for (var t = 0; t < 3; t++)
